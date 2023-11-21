@@ -6,12 +6,14 @@ import TweetImage from "../Tweet/TweetImage"
 
 import TweetActionLike from "../Tweet/TweetActionLike"
 import TweetActionRepost from "../Tweet/TweetActionRepost"
+import TweetActionShare from "../Tweet/TweetActionShare"
+import TweetActionComment from "../Tweet/TweetActionComment"
 
-function TweetOne() {
+export default function TweetOne() {
     return (
-        <>
+        <div className="tweet">
             <div>
-                <TweetAvatar imageSrc={require('./../../images/profile-photo.png')} />
+                <TweetAvatar />
             </div>
             <div className="tweet-body">
                 <div className="tweet-title">
@@ -19,13 +21,15 @@ function TweetOne() {
                     <TweetTitleDetails />
                 </div>
                 <TweetText />
-                <TweetImage imageSrc={require('./../../images/tweet-image.png')} />
+                <TweetImage />
 
             </div>
             <div className="tweet-actions">
                 <TweetActionLike likeCount={4} />
                 <TweetActionRepost repostCount={49} />
+                <TweetActionShare shareCount={15} />
+                <TweetActionComment commentCount={42} />
             </div>
-        </>
+        </div>
     )
 }

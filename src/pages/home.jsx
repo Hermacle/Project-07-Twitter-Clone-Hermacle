@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Avatar from '../components/Tweet-editor/avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
+import TweetOne from '../components/Tweets/TweetOne';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Avatar />
         <TweetEditorForm />
       </section>
+        <TweetOne />
     </main>
   );
 }

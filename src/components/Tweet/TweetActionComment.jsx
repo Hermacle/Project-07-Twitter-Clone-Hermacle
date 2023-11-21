@@ -7,11 +7,4 @@ export default function TweetActionComment({ commentCount }) {
     )
 }
 
-// Model d'appel 
-function Display() {
-    return (
-        <>
-            <TweetActionComment commentCount={42} />
-        </>
-    )
-}
+ 

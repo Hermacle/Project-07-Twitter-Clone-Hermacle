@@ -1,16 +1,7 @@
 import { FiShare } from "react-icons/fi";
 
-export default function TweetActionShare({ sharetCount }) {
+export default function TweetActionShare({ shareCount }) {
     return (
-        <p className="tweet-action"><FiShare /> {sharetCount} </p>
-    )
-}
-
-// Model d'appel 
-function Display() {
-    return (
-        <>
-            <TweetActionShare sharetCount={15} />
-        </>
+        <p className="tweet-action"><FiShare /> {shareCount} </p>
     )
 }

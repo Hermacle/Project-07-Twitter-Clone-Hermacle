@@ -1,14 +1,17 @@
+import { BsStars } from "react-icons/bs";
+
 function PageTitle() {
+    const titlePage = 'Home'
     return (
-        <h1 className="page-title">Home</h1>
+        <h1 className="page-title">{titlePage}</h1>
     )
 }
 function TopTweets() {
     return (
-        <span className="top-tweets">Icone</span>
+        <BsStars className="top-tweets"/>
     )
 }
-function Header() {
+export default function Header() {
     return (
         <header className='header'>
             <PageTitle />
@@ -16,4 +19,4 @@ function Header() {
         </header>
     )
 }
-export default Header; 
+  

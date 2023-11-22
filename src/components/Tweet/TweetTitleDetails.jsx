@@ -1,5 +1,5 @@
-export default function TweetTitleDetails (){
+export default function TweetTitleDetails ({authorName, timePost}){
     return (
-        <p className="tweet-title-details">@Twitter.Date de post</p>
+        <p className="tweet-title-details">{authorName} . {timePost}</p>
     )
 }

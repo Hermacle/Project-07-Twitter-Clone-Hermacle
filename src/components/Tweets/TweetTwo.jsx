@@ -2,6 +2,7 @@ import TweetAvatar from "../Tweet/TweetAvatar"
 import TweetTitleAuthor from "../Tweet/TweetTitleAuthor"
 import TweetTitleDetails from "../Tweet/TweetTitleDetails"
 import TweetText from "../Tweet/TweetText"
+import TweetImage from "../Tweet/TweetImage"
 
 // Import Tweet Actions
 import TweetActionLike from "../Tweet/TweetActionLike"
@@ -10,12 +11,12 @@ import TweetActionShare from "../Tweet/TweetActionShare"
 import TweetActionComment from "../Tweet/TweetActionComment"
 
 // Tweet Image Avatar
-import imageTweetAvatar from './../../images/tweet-profile-photo.png';
+import imageTweetAvatar from './../../images/tweet-profile-photo3.png';
 
 // Import React-icons 
 import { HiCheckBadge } from "react-icons/hi2";
 
-export default function TweetOne() {
+export default function TweetTwo() {
     return (
         <div className="tweet">
             <TweetAvatar imageSrc={imageTweetAvatar} />
@@ -23,16 +24,17 @@ export default function TweetOne() {
             <div className="tweet-content">
                 <div className="tweet-body">
                     <div className="tweet-title">
-                        <TweetTitleAuthor titleAuthor="CNN" /><HiCheckBadge className="tweet-title-author" />
-                        <TweetTitleDetails authorName="@CNN" timePost="7m" />
+                        <TweetTitleAuthor titleAuthor="The New York Times" /><HiCheckBadge className="tweet-title-author" />
+                        <TweetTitleDetails authorName="@nytimes" timePost="2h" />
                     </div>
-                    <TweetText tweetText="President Joe Biden touted a new agreement reached with the Europen Union to ease trump-era tariffs on aluminum and stell as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis." />
+                    <TweetText tweetText="Gardening boomed during the pandemic. Six black writers share how has helped them re-establish, and reimagine, a connection to cultivation and land." />
+                    <TweetImage />
                 </div>
                 <div className="tweet-actions">
-                    <TweetActionComment commentCount={57} />
-                    <TweetActionRepost repostCount={144} />
-                    <TweetActionLike likeCount={184} />
-                    <TweetActionShare shareCount={2} />
+                    <TweetActionComment commentCount={19} />
+                    <TweetActionRepost repostCount={48} />
+                    <TweetActionLike likeCount={422} />
+                    <TweetActionShare shareCount={19} />
                 </div>
             </div>
         </div>

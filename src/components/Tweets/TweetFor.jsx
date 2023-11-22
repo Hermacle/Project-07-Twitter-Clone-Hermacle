@@ -10,12 +10,12 @@ import TweetActionShare from "../Tweet/TweetActionShare"
 import TweetActionComment from "../Tweet/TweetActionComment"
 
 // Tweet Image Avatar
-import imageTweetAvatar from './../../images/tweet-profile-photo.png';
+import imageTweetAvatar from './../../images/tweet-profile-photo2.png';
 
 // Import React-icons 
 import { HiCheckBadge } from "react-icons/hi2";
 
-export default function TweetOne() {
+export default function TweetFor() {
     return (
         <div className="tweet">
             <TweetAvatar imageSrc={imageTweetAvatar} />
@@ -23,16 +23,16 @@ export default function TweetOne() {
             <div className="tweet-content">
                 <div className="tweet-body">
                     <div className="tweet-title">
-                        <TweetTitleAuthor titleAuthor="CNN" /><HiCheckBadge className="tweet-title-author" />
-                        <TweetTitleDetails authorName="@CNN" timePost="7m" />
+                        <TweetTitleAuthor titleAuthor="Twitter" /><HiCheckBadge className="tweet-title-author" />
+                        <TweetTitleDetails authorName="@Twitter" timePost="Oct, 4" />
                     </div>
-                    <TweetText tweetText="President Joe Biden touted a new agreement reached with the Europen Union to ease trump-era tariffs on aluminum and stell as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis." />
+                    <TweetText tweetText="Your timeline is like a book you'll never finish." />
                 </div>
                 <div className="tweet-actions">
-                    <TweetActionComment commentCount={57} />
-                    <TweetActionRepost repostCount={144} />
-                    <TweetActionLike likeCount={184} />
-                    <TweetActionShare shareCount={2} />
+                    <TweetActionComment commentCount={"118.7k"} />
+                    <TweetActionRepost repostCount={"785.4k"} />
+                    <TweetActionLike likeCount={"3.3M"} />
+                    <TweetActionShare shareCount={null} />
                 </div>
             </div>
         </div>

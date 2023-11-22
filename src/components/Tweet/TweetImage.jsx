@@ -1,9 +1,10 @@
-import image from './../../images/tweet-profile-photo.png'
+import image from './../../images/tweet-image.png'
 export default function TweetImage({ imageSrc }){
     return (
-        <img className="tweet-image" src={image} alt="image"/>
+        <div className="tweet-image">
+            <img  src={image} alt="image"/>
+        </div>
     )
 }
 
- 
  

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Avatar from '../components/Tweet-editor/avatar';
+import Avatar from '../components/Tweet-editor/Avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
 import TweetOne from '../components/Tweets/TweetOne';
 import TweetTwo from '../components/Tweets/TweetTwo';

@@ -1,8 +1,8 @@
-import { HiOutlinePhoto } from "react-icons/hi2";
-import { BsFiletypeGif } from "react-icons/bs";
-import { BiPoll } from "react-icons/bi";
-import { BsEmojiSmile } from "react-icons/bs";
-import { LuFolderClock } from "react-icons/lu";
+ import smileIcon from './../../Icons/Emoji.svg';
+import gifIcon from './../../Icons/Gif.svg';
+import mediaIcon from './../../Icons/Media.svg';
+import pollIcon from './../../Icons/Poll.svg';
+import scheduleIcon from './../../Icons/Schedule.svg';
 
 function TweetEditorInput() {
     return (
@@ -13,13 +13,12 @@ function TweetEditorButtons() {
     const buttonValue = 'Tweet';
     return (
         <div className="tweet-editor-buttons">
-            <div className="tweet-editor-actions">
-                <HiOutlinePhoto />
-                <BsFiletypeGif />
-                <BiPoll />
-                <BsEmojiSmile />
-                <LuFolderClock />
-
+            <div className="tweet-editor-actions"> 
+                <img src={mediaIcon} />
+                <img src={gifIcon} />
+                <img src={pollIcon} />
+                <img src={smileIcon} />
+                <img src={scheduleIcon} />
             </div>
             <button className="button">{buttonValue}</button>
         </div>

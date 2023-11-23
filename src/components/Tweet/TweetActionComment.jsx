@@ -6,5 +6,4 @@ export default function TweetActionComment({ commentCount }) {
         <p className="tweet-action"><FiMessageCircle /> {commentCount} </p>
     )
 }
-
  

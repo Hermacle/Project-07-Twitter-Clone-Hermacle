@@ -6,6 +6,7 @@ import TweetOne from '../components/Tweets/TweetOne';
 import TweetTwo from '../components/Tweets/TweetTwo';
 import TweetThree from '../components/Tweets/TweetThree';
 import TweetFor from '../components/Tweets/TweetFor';
+import Tweets from '../components/Tweets/Tweets';
 
 export default function Home() {
   return (
@@ -16,10 +17,12 @@ export default function Home() {
         <TweetEditorForm />
       </section>
       <section className='tweets'>
-        <TweetOne />
+        {/* <TweetOne />
         <TweetTwo />
         <TweetThree />
-        <TweetFor />
+        <TweetFor /> */}
+        <Tweets />
+
       </section>
     </main>
   );

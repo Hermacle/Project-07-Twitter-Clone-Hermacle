@@ -4,7 +4,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div>
-                <img src="src/Icons/Twitter.svg" alt="icone" />
+                <div className="logo" >
+                    <img src="src/Icons/Twitter.svg" alt="icone" />
+                </div>
 
                 <div>
                     <ul>
@@ -18,7 +20,7 @@ function Sidebar() {
                         <li><img src="src/Icons/More.svg" alt="" /> More</li>
                     </ul>
                 </div>
-                <button>Tweet</button>
+                <button className="button post-button">Tweet</button>
             </div>
             <div className="user-profil">
                 <img src="src/images/profile-photo.png" className="user-avatar" alt="icone" />

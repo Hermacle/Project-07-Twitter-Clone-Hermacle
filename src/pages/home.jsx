@@ -2,10 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Avatar from '../components/Tweet-editor/Avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
-import TweetOne from '../components/Tweets/TweetOne';
-import TweetTwo from '../components/Tweets/TweetTwo';
-import TweetThree from '../components/Tweets/TweetThree';
-import TweetFor from '../components/Tweets/TweetFor';
+
 import Tweets from '../components/Tweets/Tweets';
 
 export default function Home() {
@@ -17,12 +14,7 @@ export default function Home() {
         <TweetEditorForm />
       </section>
       <section className='tweets'>
-        {/* <TweetOne />
-        <TweetTwo />
-        <TweetThree />
-        <TweetFor /> */}
         <Tweets />
-
       </section>
     </main>
   );

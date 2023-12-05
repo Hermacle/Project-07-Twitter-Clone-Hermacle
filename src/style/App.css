@@ -6,6 +6,7 @@ body{
     color: white;
     margin: 0 auto;
     max-width: 1800px;
+    font-family: 'Inter', sans-serif;
 }
 
 #root{
@@ -16,7 +17,6 @@ body{
 
 .timeline {
     flex: 0 0 800px;
-    font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
@@ -193,3 +193,4 @@ body{
     justify-content: center;
     gap: 20px;
 }
+

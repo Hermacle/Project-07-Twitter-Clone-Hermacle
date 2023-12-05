@@ -4,9 +4,12 @@ import Avatar from '../components/Tweet-editor/Avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
 
 import Tweets from '../components/Tweets/Tweets';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 export default function Home() {
   return (
+    <>
+    <Sidebar />
     <main className="timeline">
       <Header />
       <section className='tweet-editor'>
@@ -17,5 +20,7 @@ export default function Home() {
         <Tweets />
       </section>
     </main>
+     
+    </>
   );
 }

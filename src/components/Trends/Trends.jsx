@@ -3,16 +3,16 @@ import { HiCheckBadge } from "react-icons/hi2";
 function Trends() {
     return (
         <div className="right-sidebar">
-            <div className="search card">
+            <div className="search">
                 <img src="src/Icons/Search.svg" alt="Search Icon" />
                 <input type="search" name="" id="" placeholder="Search Twitter" />
             </div>
             <div className="trends card">
-                <div className="tends-title">
+                <div className="tends-title display-flex">
                     <h4>Trends for you</h4>
                     <div><img src="src/Icons/Settings.svg" alt="Settings Icon" /></div>
-                </div>
-                <div className="trend">
+                </div> <br />
+                <div className="trend display-flex">
                     <div className="trend-detail">
                         <p className="small-text">Trending in Turkey</p>
                         <p>#SQUID</p>
@@ -21,8 +21,8 @@ function Trends() {
                     <div>
                         <img src="src/Icons/More-2.svg" alt="More Icon" />
                     </div>
-                </div>
-                <div className="trend">
+                </div><br />
+                <div className="trend display-flex">
                     <div className="trend-detail">
                         <p className="small-text">Trending in Turkey</p>
                         <p>#SQUID</p>
@@ -31,8 +31,8 @@ function Trends() {
                     <div>
                         <img src="src/Icons/More-2.svg" alt="More Icon" />
                     </div>
-                </div>
-                <div className="trend">
+                </div> <br />
+                <div className="trend display-flex">
                     <div className="trend-detail">
                         <p className="small-text">Trending in Turkey</p>
                         <p>#SQUID</p>
@@ -41,8 +41,8 @@ function Trends() {
                     <div>
                         <img src="src/Icons/More-2.svg" alt="More Icon" />
                     </div>
-                </div>
-                <div className="trend">
+                </div> <br />
+                <div className="trend display-flex">
                     <div className="trend-detail">
                         <p className="small-text">Trending in Turkey</p>
                         <p>#SQUID</p>
@@ -51,7 +51,7 @@ function Trends() {
                     <div>
                         <img src="src/Icons/More-2.svg" alt="More Icon" />
                     </div>
-                </div>
+                </div> <br />
                  
                 <div className="show-more">
                     <a href="#">Show more</a>
@@ -106,9 +106,9 @@ function Trends() {
                 <a href="">Terms of Service</a> <br />
                 <a href="">Privacy Policy</a> <br />
                 <a href="">Cookie Policy</a> <br />
-                <a href="">Imprint</a> <br />
-                <a href="">Ads info</a> <br />
-                <a href="">More ...</a> <br />
+                <a href="">Imprint</a> 
+                <a href="">Ads info</a>
+                <a href="">More ...</a>  
                 <span> © 2021 Twiter, Inc.</span>
             </div>
         </div>

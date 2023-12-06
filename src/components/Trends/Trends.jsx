@@ -52,63 +52,60 @@ function Trends() {
                         <img src="src/Icons/More-2.svg" alt="More Icon" />
                     </div>
                 </div> <br />
-                 
+
                 <div className="show-more">
                     <a href="#">Show more</a>
                 </div>
             </div>
             <div className="follow card">
-                <h4>Who to follow</h4>
-                <div className="follow-item">
+                <h4>Who to follow</h4> <br />
+                <div className="follow-item display-flex">
                     <div className="">
                         <img src="src/images/tweet-profile-photo3.png" alt="avatar" />
                     </div>
                     <div className="">
-                        <p className="">The New York Times</p>
-                        <HiCheckBadge className="" />
+                        <p className="">The New York Times <HiCheckBadge className="" /></p>
                         <p className="small-text">@nytimes</p>
                     </div>
                     <div>
                         <button>Follow</button>
                     </div>
-                </div>
-                <div className="follow-item">
+                </div> <br />
+                <div className="follow-item display-flex">
                     <div className="">
                         <img src="src/images/tweet-profile-photo3.png" alt="avatar" />
                     </div>
                     <div className="">
-                        <p className="">The New York Times</p>
-                        <HiCheckBadge className="" />
+                        <p className="">The New York Times <HiCheckBadge className="" /></p>
                         <p className="small-text">@nytimes</p>
                     </div>
                     <div>
                         <button>Follow</button>
                     </div>
-                </div>
-                <div className="follow-item">
+                </div> <br />
+                <div className="follow-item display-flex">
                     <div className="">
                         <img src="src/images/tweet-profile-photo3.png" alt="avatar" />
                     </div>
                     <div className="">
-                        <p className="">The New York Times</p>
-                        <HiCheckBadge className="" />
+                        <p className="">The New York Times <HiCheckBadge className="" /></p>
                         <p className="small-text">@nytimes</p>
                     </div>
                     <div>
                         <button>Follow</button>
                     </div>
-                </div>
+                </div> <br />
                 <div className="show-more">
                     <a href="#">Show more</a>
                 </div>
             </div>
             <div className="policy">
-                <a href="">Terms of Service</a> <br />
-                <a href="">Privacy Policy</a> <br />
-                <a href="">Cookie Policy</a> <br />
-                <a href="">Imprint</a> 
-                <a href="">Ads info</a>
-                <a href="">More ...</a>  
+                <a href="#">Terms of Service</a> 
+                <a href="#">Privacy Policy</a> 
+                <a href="#">Cookie Policy</a> <br /> <br />
+                <a href="#">Imprint</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ...</a>
                 <span> © 2021 Twiter, Inc.</span>
             </div>
         </div>

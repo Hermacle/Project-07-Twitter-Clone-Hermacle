@@ -22,13 +22,14 @@ function Sidebar() {
                 </div>
                 <button className="button post-button">Tweet</button>
             </div>
+            
             <div className="user-profil">
                 <img src="src/images/profile-photo.png" className="user-avatar" alt="icone" />
-                <div>
+                <div className="user-detail">
                     <h4>Hermacle <img src="src/Icons/Private.svg" alt="icone" /></h4>
-                    <p>@Username</p>
+                    <p className="user-name">@Username</p>
                 </div>
-                <img src="src/Icons/More-2.svg" alt="icone" />
+                <img src="src/Icons/More-2.svg" className="more-2" alt="icone" />
             </div>
 
         </div>

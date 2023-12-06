@@ -6,6 +6,13 @@
     font-weight: 300;
     font-size: 13px;
 }
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 body{
     background-color: black;
@@ -22,7 +29,7 @@ body{
 }
 
 .timeline {
-    flex: 0 0 750px;
+    flex: 0 0 700px;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
@@ -312,7 +319,7 @@ body{
     background-color: #1D9BF0;
     border-radius: 50%;
   }
-  
+ 
 .right-sidebar .card{
     padding: 14px;
 }
@@ -325,7 +332,27 @@ body{
     background-color: #16181c;
     border-radius: 20px;
 }
-.display-flex{
-    display: flex;
-    justify-content: space-between;
+.right-sidebar .follow .follow-item{
+    gap: 8px;
 }
+ 
+.right-sidebar .follow-item img{
+    width: 40px;
+    height: 40px;
+}
+.right-sidebar .follow-item button{
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+.right-sidebar .policy,
+.right-sidebar .policy a{
+    color: #6E767D;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px;
+}
+

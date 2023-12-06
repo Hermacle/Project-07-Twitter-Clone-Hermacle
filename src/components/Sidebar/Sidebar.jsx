@@ -27,7 +27,7 @@ function Sidebar() {
                 <img src="src/images/profile-photo.png" className="user-avatar" alt="icone" />
                 <div className="user-detail">
                     <h4>Hermacle <img src="src/Icons/Private.svg" alt="icone" /></h4>
-                    <p className="user-name">@Username</p>
+                    <p className="small-text">@Username</p>
                 </div>
                 <img src="src/Icons/More-2.svg" className="more-2" alt="icone" />
             </div>

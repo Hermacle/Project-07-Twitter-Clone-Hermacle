@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* Genral  */
+.small-text {
+    color: #646464;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
 
 body{
     background-color: black;
@@ -16,7 +24,7 @@ body{
 }
 
 .timeline {
-    flex: 0 0 800px;
+    flex: 0 0 750px;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
@@ -273,8 +281,3 @@ body{
     align-items: center;
 }
 
-.sidebar .user-profil .user-name {
-    color: #808080;
-    font-weight: 400;
-    font-size: 14px;
-}

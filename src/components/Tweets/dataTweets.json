@@ -33,7 +33,7 @@
         "text": "We'll begin replacing that “official” label with a gold checkmark for businesses, and later in the week a grey checkmark for government and multilateral accounts.",
         "commentCount": "6.8K",
         "repostCount": "36.6K",
-        "likeCount": "267K",
+        "likeCount": 267,
         "shareCount": 12
     },
     {
@@ -44,8 +44,8 @@
         "timePost": "Oct, 4",
         "text": "Your timeline is like a book you'll never finish.",
         "commentCount": "118.7K",
-        "repostCount": "785.4K",
-        "likeCount": "3.3M",
+        "repostCount": 785,
+        "likeCount": 3.3,
         "shareCount": 12
     }
 ]

@@ -84,7 +84,7 @@ function Follow() {
                 </div>
                 <div className="">
                     <p className="">The New York Times <HiCheckBadge className="" /></p>
-                    <p className="small-text">@nytimes</p>
+                    <p className="small-text">@CNN</p>
                 </div>
                 <div>
                     <button>Follow</button>

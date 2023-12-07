@@ -1,4 +1,4 @@
-import avatarImage from './../../images/profile-photo.png'
+import avatarImage from './../../images/Profil-image_400x400.jpg'
 
 export default function Avatar() {
     return (

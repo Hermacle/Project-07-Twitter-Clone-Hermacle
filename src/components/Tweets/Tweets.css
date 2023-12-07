@@ -8,7 +8,7 @@
     transition: ease-in-out .1s;
 }
 
-/* Commnent Button */
+/* Comment Button */
 .action-comment:hover{
     color: #1d9bf0;
 }
@@ -34,6 +34,9 @@
 /* Like Button */
 .action-like:hover{
     color: #c1035b;
+}
+.action-like .icon-heart-fill{
+    color: #c1035b !important;
 }
 .action-like:hover p{
     background-color: #200914;

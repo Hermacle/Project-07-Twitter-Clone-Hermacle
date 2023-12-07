@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Sidebar() {
+function Sidebar({homeIcon, profileIcon}) {
     return (
         <div className="sidebar">
             <div>
@@ -10,13 +10,15 @@ function Sidebar() {
 
                 <div>
                     <ul>
-                        <li><NavLink to="/" className="navigation"><img src="src/Icons/Home-Fill.svg" alt="" />Home</NavLink> </li>
+                        {/* <li><NavLink to="/" className="navigation"><img src="src/Icons/Home-Fill.svg" alt="" />Home</NavLink> </li> */}
+                        <li><NavLink to="/" className="navigation"><img src={homeIcon} alt="" />Home</NavLink> </li>
                         <li><NavLink to="/explore" className="navigation"><img src="src/Icons/Explore.svg" alt="" /> Explore</NavLink> </li>
                         <li><NavLink to="/notifications" className="navigation"><img src="src/Icons/Notifications.svg" alt="" /> Notifications</NavLink></li>
                         <li><NavLink to="/messages" className="navigation"><img src="src/Icons/Messages.svg" alt="" /> Messages</NavLink> </li>
-                        <li><NavLink to="/messages" className="navigation"><img src="src/Icons/Bookmarks.svg" alt="" /> Bookmarks</NavLink></li>
+                        <li><NavLink to="/bookmarks" className="navigation"><img src="src/Icons/Bookmarks.svg" alt="" /> Bookmarks</NavLink></li>
                         <li><NavLink to="list" className="navigation"><img src="src/Icons/Lists.svg" alt="" /> List</NavLink></li>
-                        <li><NavLink to="/profile" className="navigation"><img src="src/Icons/Profile.svg" alt="" /> Profile</NavLink></li>
+                        {/* <li><NavLink to="/profile" className="navigation"><img src="src/Icons/Profile.svg" alt="" /> Profile</NavLink></li> */}
+                        <li><NavLink to="/profile" className="navigation"><img src={profileIcon} alt="" /> Profile</NavLink></li>
                         <li><NavLink to="/more" className="navigation"><img src="src/Icons/More.svg" alt="" /> More</NavLink></li>
                     </ul>
                 </div>

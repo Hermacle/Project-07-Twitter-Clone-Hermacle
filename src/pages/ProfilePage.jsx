@@ -11,7 +11,7 @@ import Profile from '../components/Profile/Profile';
 export default function ProfilePage() {
   return (
     <>
-    <Sidebar />
+    <Sidebar homeIcon="src/Icons/Home.svg" profileIcon="src/Icons/Profile-fill.svg" />
     <main className="timeline">
       <section >
         <Profile />

@@ -291,12 +291,16 @@ body {
 .sidebar .user-profil .user-detail {
     margin: 0 20px 0 4px;
 }
+ 
 
 .sidebar .user-profil h4 {
     font-weight: 500;
     font-size: 16px;
     display: flex;
     align-items: center;
+}
+.sidebar .user-profil img {
+     border-radius: 50%;
 }
 
 /* ----------- Right Sidebar ----------- */

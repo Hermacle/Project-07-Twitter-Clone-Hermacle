@@ -6,6 +6,8 @@ import Trends from '../components/Trends/Trends';
 
 import Tweets from '../components/Tweets/Tweets';
 import Sidebar from '../components/Sidebar/Sidebar';
+ 
+
 
 export default function Home() {
   return (
@@ -19,9 +21,13 @@ export default function Home() {
       </section>
       <section className='tweets'>
         <Tweets />
+         
       </section>
     </main>
     <Trends />
     </>
   );
 }
+
+
+ 

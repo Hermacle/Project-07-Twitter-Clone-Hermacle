@@ -1,0 +1,57 @@
+.tweet-action {
+    cursor: pointer;
+    transition: ease-in-out .1s;
+}
+.tweet-action p{
+    display: flex;
+    padding: 10px;
+    transition: ease-in-out .1s;
+}
+
+/* Commnent Button */
+.action-comment:hover{
+    color: #1d9bf0;
+}
+.action-comment:hover p{
+    background-color: #0a171f;
+    border-radius: 50%;
+}
+.action-comment:hover p .icon {
+    color: #1d9bf0 !important;
+}
+
+/* Repost Button */
+.action-repost:hover{
+    color: #00ba7c;
+}
+.action-repost:hover p{
+    background-color: #071a14;
+    border-radius: 50%;
+}
+.action-repost:hover p .icon {
+    color: #00ba7c !important;
+}
+/* Like Button */
+.action-like:hover{
+    color: #c1035b;
+}
+.action-like:hover p{
+    background-color: #200914;
+    border-radius: 50%;
+}
+.action-like:hover p .icon {
+    color: #c1035b !important;
+}
+ 
+/* Share Button */
+.action-share:hover{
+    color: #1d9bf0;
+}
+.action-share:hover p{
+    background-color: #0a171f;
+    border-radius: 50%;
+}
+.action-share:hover p .icon {
+    color: #1d9bf0 !important;
+}
+  

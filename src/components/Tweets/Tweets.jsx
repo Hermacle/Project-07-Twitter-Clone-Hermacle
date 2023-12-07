@@ -10,7 +10,7 @@ import { BiRepost } from "react-icons/bi";
 import { FiShare } from "react-icons/fi";
 import { HiCheckBadge } from "react-icons/hi2";
 
-export default function Tweets() {
+export default function Tweets({icon}) {
     return (
         <div>
             {dataTweets.map((tweet) => (
@@ -24,8 +24,8 @@ export default function Tweets() {
                             <div className="tweet-body">
                                 <div className="tweet-title">
                                     <h3 className="tweet-title-author">{tweet.author}</h3>
-                                    <HiCheckBadge className="tweet-title-author" />
-                                     
+                                    {/* <HiCheckBadge className="tweet-title-author" /> */}
+                                    <span className="tweet-title-author">{icon}</span>
 
                                     <p className="tweet-title-details">{tweet.userName} . {tweet.timePost}</p>
                                 </div>

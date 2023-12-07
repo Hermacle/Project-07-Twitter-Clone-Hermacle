@@ -1,6 +1,8 @@
 //Import json file
 import dataTweets from './dataTweets.json'
 
+import ("./Tweets.css")
+
 //Import React icons 
 import { IoIosHeartEmpty } from "react-icons/io";
 import { FiMessageCircle } from "react-icons/fi";
@@ -23,6 +25,8 @@ export default function Tweets() {
                                 <div className="tweet-title">
                                     <h3 className="tweet-title-author">{tweet.author}</h3>
                                     <HiCheckBadge className="tweet-title-author" />
+                                     
+
                                     <p className="tweet-title-details">{tweet.userName} . {tweet.timePost}</p>
                                 </div>
                                 <p className="tweet-text">{tweet.text}</p>
@@ -31,10 +35,10 @@ export default function Tweets() {
                                 </div>
                             </div>
                             <div className="tweet-actions">
-                                <div className='tweet-action'><FiMessageCircle /> {tweet.commentCount}</div>
-                                <div className='tweet-action'><BiRepost /> {tweet.repostCount}</div>
-                                <div className='tweet-action'><FiShare /> {tweet.shareCount}</div>
-                                <div className='tweet-action'><IoIosHeartEmpty /> {tweet.likeCount}</div>
+                                <div className='tweet-action action-comment' title='Reply'> <p><FiMessageCircle  className='icon'/></p>{tweet.commentCount}</div>
+                                <div className='tweet-action action-repost' title='Repost'><p><BiRepost className='icon' /></p>{tweet.repostCount}</div>
+                                <div className='tweet-action action-like' title='Like'><p><IoIosHeartEmpty className='icon' /></p>{tweet.likeCount}</div>
+                                <div className='tweet-action action-share' title='Share'><p><FiShare className='icon' /></p>{tweet.shareCount}</div>
                             </div>
                         </div>
                     </div>
@@ -43,3 +47,10 @@ export default function Tweets() {
         </div>
     )
 }
+
+
+
+
+ 
+    
+   

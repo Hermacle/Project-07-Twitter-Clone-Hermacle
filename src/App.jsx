@@ -4,6 +4,8 @@ import ProfilePage from "./pages/ProfilePage.jsx";
 import Layout from "./components/layout.jsx";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
 
+import { appRoutes } from "./Routes/routes.jsx";
+
 import('./style/reset.css');
 import('./style/App.css');
 
@@ -12,8 +14,8 @@ export default function App() {
     <Layout>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path={appRoutes.home} element={<Home />} />
+        <Route path={appRoutes.profile} element={<ProfilePage />} />
       </Routes>
       </BrowserRouter>
     </Layout>

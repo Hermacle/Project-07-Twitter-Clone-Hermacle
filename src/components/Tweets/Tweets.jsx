@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
 //Import json file
-import dataTweets from './dataTweets.json'
+ 
+import dataTweets from '../Data/dataTweets';
 import "./Tweets.css"
 
 //Import React icons

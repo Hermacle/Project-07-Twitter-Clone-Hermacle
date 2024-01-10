@@ -1,4 +1,4 @@
-[
+const dataTweets = [
     {
         "id": 1,
         "avatar": "src/images/tweet-profile-photo.png",
@@ -37,7 +37,7 @@
         "shareCount": 12
     },
     {
-        "id": 3,
+        "id": 4,
         "avatar": "src/images/tweet-profile-photo2.png",
         "author":"Twitter",
         "userName": "@Twitter",
@@ -49,3 +49,4 @@
         "shareCount": 12
     }
 ]
+export default dataTweets;

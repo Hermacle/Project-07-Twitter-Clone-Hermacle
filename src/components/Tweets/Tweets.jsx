@@ -1,71 +1,84 @@
-import { useState } from 'react'
 
-//Import json file
- 
-import dataTweets from '../Data/dataTweets';
-import "./Tweets.css"
+import { useState } from 'react'; 
+import "./Tweets.css";  
 
-//Import React icons
-import { IoIosHeartEmpty } from "react-icons/io";
-import { IoIosHeart } from "react-icons/io";
-import { FiMessageCircle } from "react-icons/fi";
-import { BiRepost } from "react-icons/bi";
-import { FiShare } from "react-icons/fi";
+// Importation des data
+import data from '../Data/data'; 
 
+// Import react-icons
+import { IoIosHeartEmpty } from "react-icons/io"; 
+import { IoIosHeart } from "react-icons/io"; 
+import { FiMessageCircle } from "react-icons/fi";  
+import { BiRepost } from "react-icons/bi";  
+import { FiShare } from "react-icons/fi"; 
+
+// Composant principal Tweets 
 export default function Tweets({ icon }) {
-	return (
-		<div>
-			{dataTweets.map((tweet) => {
-				const [count, setCount] = useState(tweet.likeCount);
-				const [increment, setIncrement] = useState(true);
+  return (
+    <div>
+      {/* Parcours de chaque User(utilisateur Tweeter) */}
+      {Object.keys(data).map((user) => {
+        const userData = data[user];  
 
-				const handleClick = () => {
-					if (increment) {
-						setCount(count + 1);
-					} else {
-						setCount(count - 1);
-					}
-					setIncrement(!increment);
-				};
+				// Parcours de chaque tweet des users
+        return userData.tweets.map((tweet) => { 
+          const tweetData = userData.profile; 
 
-				return (
-					<div key={tweet.id}>
-						<div className="tweet">
-							<div className="tweet-avatar">
-								<img src={tweet.avatar} alt="avatar" />
-							</div>
+          const [count, setCount] = useState(tweet.likeCount);  
+          const [increment, setIncrement] = useState(true);  
 
-							<div className="tweet-content">
-								<div className="tweet-body">
-									<div className="tweet-title">
-										<h3 className="tweet-title-author">{tweet.author}</h3>
-										<span className="tweet-title-author">{icon}</span>
-										<p className="tweet-title-details">{tweet.userName} . {tweet.timePost}</p>
-									</div>
-									<p className="tweet-text">{tweet.text}</p>
-									<div className="tweet-image">
-										{tweet.image && <img src={tweet.image} alt="tweet" />}
-									</div>
-								</div>
+          //  Gestion Clic sur du bouton "Like"
+          const handleClick = () => {
+            if (increment) {
+              setCount(count + 1);  
+            } else {
+              setCount(count - 1);  
+            }
+            setIncrement(!increment); // Inversion de l'état d'incrémentation
+          };
 
-								<div className="tweet-actions">
-									<div className='tweet-action action-comment' title='Reply'>
-										<p><FiMessageCircle className='icon' /></p>{tweet.commentCount}
-									</div>
-									<div className='tweet-action action-repost' title='Repost'>
-										<p><BiRepost className='icon' /></p>{tweet.repostCount}
-									</div>
+          return (
+            <div key={tweet.id}>
+              <div className="tweet">
+                <div className="tweet-avatar">
+                  <img src={tweetData.avatar} alt="avatar" /> 
+                </div>
 
-									<div className='tweet-action action-like' title='Like' onClick={handleClick}>
-										<p>{increment ? <IoIosHeartEmpty className='icon' /> : <IoIosHeart className='icon-heart-fill' />}</p>{count}
-									</div>
-									<div className='tweet-action action-share' title='Share'><p><FiShare className='icon' /></p>{tweet.shareCount}</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				);
-			})}
-		</div>
-	);
+                <div className="tweet-content">
+                  <div className="tweet-body">
+                    <div className="tweet-title">
+                      <h3 className="tweet-title-author">{tweetData.author}</h3>  
+                      <span className="tweet-title-author">{icon}</span>  
+                      <p className="tweet-title-details">{tweetData.userName} . {tweet.timePost}</p>  
+                    </div>
+                    <p className="tweet-text">{tweet.text}</p> 
+                    <div className="tweet-image">
+                      {tweet.imagePost && <img src={tweet.imagePost} alt="tweet" />} 
+                    </div>
+                  </div>
+
+                  <div className="tweet-actions">
+                    <div className='tweet-action action-comment' title='Reply'>
+                      <p><FiMessageCircle className='icon' /></p>{tweet.commentCount}
+                    </div>
+                    <div className='tweet-action action-repost' title='Repost'>
+                      <p><BiRepost className='icon' /></p>{tweet.repostCount}
+                    </div>
+
+                    <div className='tweet-action action-like' title='Like' onClick={handleClick}>
+                      <p>{increment ? <IoIosHeartEmpty className='icon' /> : <IoIosHeart className='icon-heart-fill' />}</p>{count}
+                    </div>
+                    
+                    <div className='tweet-action action-share' title='Share'>
+                      <p><FiShare className='icon' /></p>{tweet.shareCount}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        });
+      })}
+    </div>
+  );
 }

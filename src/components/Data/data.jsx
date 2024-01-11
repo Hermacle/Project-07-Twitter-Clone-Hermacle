@@ -79,7 +79,7 @@ const data = {
         shareCount: 12        
       },
       {
-        id: "Tweet1_ID",
+        id: "Tweet2_ID",
         text: "Your timeline is like a book you'll never finish.",
         imagePost :"",
         timePost: "Oct, 4",

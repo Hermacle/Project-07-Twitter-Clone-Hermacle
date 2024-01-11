@@ -1,9 +1,12 @@
 import React from 'react';
 import Trends from '../components/Trends/Trends';
 
-import Tweets from '../components/Tweets/Tweets';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Profile from '../components/Profile/Profile';
+import AllTweets from '../components/Tweets/AllTweets';
+
+// React Icons 
+import { HiCheckBadge } from 'react-icons/hi2';
 
 export default function ProfilePage() {
   return (
@@ -12,7 +15,7 @@ export default function ProfilePage() {
     <main className="timeline">
       <section >
         <Profile />
-        <Tweets />
+        <AllTweets icon={<HiCheckBadge />}/>
       </section>
     </main>
     <Trends />

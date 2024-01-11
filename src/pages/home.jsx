@@ -4,12 +4,11 @@ import Avatar from '../components/Tweet-editor/Avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
 import Trends from '../components/Trends/Trends';
 
-import Tweets from '../components/Tweets/Tweets';
 import Sidebar from '../components/Sidebar/Sidebar';
+import AllTweets from '../components/Tweets/AllTweets';
 
 // React Icons 
 import { HiCheckBadge } from 'react-icons/hi2';
-
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
           <TweetEditorForm />
         </section>
         <section className='tweets'>
-          <Tweets icon={<HiCheckBadge />} />
+          <AllTweets icon={<HiCheckBadge />} />
         </section>
       </main>
       <Trends />

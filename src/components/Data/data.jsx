@@ -1,4 +1,31 @@
 const data = {
+  Hermacle: {
+    // Données pour l'utilisateur Hermacle
+    profile: {
+      id: "Herma_ID",
+      author:"Hermacle Kihenyegho",
+      userName: "@Hermacle_kih",
+      avatar: "src/images/Profil-image_400x400.jpg",
+      imageCover: "src/images/Cover-image-600x200.jpg",
+      description: "Passionate web developer. Always seeking new opportunities for learning and professional growth. Founder of my own web development studio. Committed to creating innovative and user-friendly applications.",
+      tags: "#WebDevelopment #Coder #TechEnthusiast",
+      followers : 12,
+      followings : 4000
+    },
+    tweets: [
+      {
+        id: "Tweet1_ID",
+        text: "President Joe Biden touted a new agreement reached with the Europen Union to ease trump-era tariffs on aluminum and stell as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+        imagePost :"",
+        timePost: "7m",
+        commentCount: 57,
+        likeCount: 184,
+        commentCount: 57,
+        repostCount: 144,
+        shareCount: 2
+      }  
+    ]
+  },
   CNN: {
     // Données pour l'utilisateur CNN
     profile: {

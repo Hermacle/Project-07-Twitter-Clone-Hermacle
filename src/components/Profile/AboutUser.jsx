@@ -1,12 +1,12 @@
-function AboutUser() {
+function AboutUser({name,userName,description,following,followers,tags}) {
   return (
     <>
-      <h3>Hermacle Kihenyegho</h3>
-      <p className="small-text">@Hermacle_kih</p>
-      <p className="profile-bio">Passionate web developer. Always seeking new opportunities for learning and professional growth. Founder of my own web development studio. Committed to creating innovative and user-friendly applications. <br /> <span className="small-text">#WebDevelopment #Coder #TechEnthusiast</span></p>
+      <h3>{name}</h3>
+      <p className="small-text">{userName}</p>
+      <p className="profile-bio">{description}<br /> <span className="small-text">{tags}</span></p>
       <ul className="profile-stats">
-        <li><span className="stat-count">98</span> Following</li>
-        <li><span className="stat-count">42,000</span> Followers</li>
+        <li><span className="stat-count">{following}</span> Following</li>
+        <li><span className="stat-count">{followers}</span> Followers</li>
       </ul>
     </>
   )

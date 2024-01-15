@@ -3,6 +3,7 @@ import Trends from '../components/Trends/Trends';
 
 import Sidebar from '../components/Sidebar/Sidebar';
 import Profile from '../components/Profile/Profile';
+import CurrentProfile from '../components/Profile/CurrentProfile';
 import AllTweets from '../components/Tweets/AllTweets';
 import SpecificTweets from '../components/Tweets/SpecificTweets';
 
@@ -15,7 +16,8 @@ export default function ProfilePage() {
     <Sidebar homeIcon="src/Icons/Home.svg" profileIcon="src/Icons/Profile-fill.svg" />
     <main className="timeline">
       <section >
-        <Profile />
+        {/* <Profile /> */}
+        <CurrentProfile />
         <SpecificTweets icon={<HiCheckBadge />}/>
       </section>
     </main>

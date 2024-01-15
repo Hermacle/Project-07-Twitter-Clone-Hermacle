@@ -26,7 +26,8 @@ function TweetModel({ tweet, userData, icon }) {
   return (
     <div className="tweet">
       <div className="tweet-avatar">
-        <img src={userData.avatar} alt="avatar" />
+        <a href=""><img src={userData.avatar} alt="avatar" /></a>
+        
       </div>
       <div className="tweet-content">
         <div className="tweet-body">

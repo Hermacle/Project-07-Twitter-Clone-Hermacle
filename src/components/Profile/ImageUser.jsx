@@ -1,9 +1,9 @@
-function ImageUser() {
+function ImageUser({imageCover,avatar}) {
   return (
     <div className="image-user">
-      <img src="src/images/Cover-image-600x200.jpg" alt="Cover Photo" className="cover-photo" />
+      <img src={imageCover} alt="Cover Photo" className="cover-photo" />
       <div>
-        <img src="src/images/Profil-image_400x400.jpg" alt="Profile Picture" className="profile-picture" />
+        <img src={avatar} alt="Profile Picture" className="profile-picture" />
       </div>
     </div>
   )

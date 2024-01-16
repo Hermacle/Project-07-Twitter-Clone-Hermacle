@@ -2,17 +2,17 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 
-import "./Tweets.css"; 
+import "./Tweets.css";
 
 // Import react-icons
-import { IoIosHeartEmpty } from "react-icons/io"; 
-import { IoIosHeart } from "react-icons/io"; 
-import { FiMessageCircle } from "react-icons/fi";  
-import { BiRepost } from "react-icons/bi";  
-import { FiShare } from "react-icons/fi"; 
+import { IoIosHeartEmpty } from "react-icons/io";
+import { IoIosHeart } from "react-icons/io";
+import { FiMessageCircle } from "react-icons/fi";
+import { BiRepost } from "react-icons/bi";
+import { FiShare } from "react-icons/fi";
 
 
-function TweetModel({newProfile, tweet, userData, icon }) {
+function TweetModel({ newProfile, tweet, userData, icon }) {
   const [count, setCount] = useState(tweet.likeCount);
   const [increment, setIncrement] = useState(true);
 
@@ -28,7 +28,7 @@ function TweetModel({newProfile, tweet, userData, icon }) {
   return (
     <div className="tweet">
       <div className="tweet-avatar">
-        <Link to={`/profile/${userData.id}`}><img src={userData.avatar} alt="avatar" /></Link>
+        {userData.id === 'Herma_ID' ? (<Link to={`/profile`}><img src={userData.avatar} alt="avatar" /></Link>) : <Link to={`/profile/${userData.id}`}><img src={userData.avatar} alt="avatar" /></Link>}
       </div>
       <div className="tweet-content">
         <div className="tweet-body">
@@ -60,4 +60,4 @@ function TweetModel({newProfile, tweet, userData, icon }) {
     </div>
   );
 }
-export default  TweetModel;
+export default TweetModel;

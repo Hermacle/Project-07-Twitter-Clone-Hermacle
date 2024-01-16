@@ -30,9 +30,6 @@ export default function CurrentProfile() {
       <section className="container">
         <div className="about-user">
           <div className="button-action">
-            <ButtonAction value={moreIcon} className="icon" />
-            <ButtonAction value={msgIcon} className="icon" />
-            <ButtonAction value="Follow" className="button-follow" />
             <ButtonAction value="Edit profile" className="button-edit" />
           </div>
           <AboutUser name={author} userName={userName}  description={description} tags={tags} following={followings} followers={followers} />

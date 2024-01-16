@@ -1,5 +1,6 @@
 export const appRoutes = {
     home: '/',
     profile: '/profile',
-    specificProfile: '/specificProfile',
+    currentProfile: '/Profile',
+    profileById: '/profile/:id',
 }

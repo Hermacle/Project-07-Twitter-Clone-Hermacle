@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path={appRoutes.home} element={<Home />} />
         <Route path={appRoutes.profile} element={<ProfilePage />} />
-        <Route path={appRoutes.specificProfile} element={<SpecificProfilePage />} />
+        <Route path={appRoutes.profileById} element={<SpecificProfilePage />} />
       </Routes>
       </BrowserRouter>
     </Layout>

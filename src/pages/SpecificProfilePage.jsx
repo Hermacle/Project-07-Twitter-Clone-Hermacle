@@ -5,16 +5,18 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import SpecificProfile from '../components/Profile/SpecificProfile';
 import SpecificTweets from '../components/Tweets/SpecificTweets';
 
+
+
 // React Icons 
 import { HiCheckBadge } from 'react-icons/hi2';
 
-export default function SpecificProfilePage() {
+export default function SpecificProfilePage({newProfile}) {
   return (
     <>
     <Sidebar homeIcon="src/Icons/Home.svg" profileIcon="src/Icons/Profile.svg" />
     <main className="timeline">
       <section >
-        <SpecificProfile />
+        <SpecificProfile  />
         <SpecificTweets icon={<HiCheckBadge />}/>
       </section>
     </main>

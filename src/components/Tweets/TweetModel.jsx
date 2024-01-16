@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+
 
 import "./Tweets.css"; 
 
@@ -10,7 +12,7 @@ import { BiRepost } from "react-icons/bi";
 import { FiShare } from "react-icons/fi"; 
 
 
-function TweetModel({ tweet, userData, icon }) {
+function TweetModel({newProfile, tweet, userData, icon }) {
   const [count, setCount] = useState(tweet.likeCount);
   const [increment, setIncrement] = useState(true);
 
@@ -26,8 +28,7 @@ function TweetModel({ tweet, userData, icon }) {
   return (
     <div className="tweet">
       <div className="tweet-avatar">
-        <a href=""><img src={userData.avatar} alt="avatar" /></a>
-        
+        <Link to={`/profile/${userData.id}`}><img src={userData.avatar} alt="avatar" /></Link>
       </div>
       <div className="tweet-content">
         <div className="tweet-body">

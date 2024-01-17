@@ -1,13 +1,5 @@
 import { HiCheckBadge } from "react-icons/hi2";
-function Search() {
-  return (
-    <div className="search">
-      <img src="src/Icons/Search.svg" alt="Search Icon" />
-      <input type="search" name="" id="" placeholder="Search Twitter" />
-    </div>
-
-  )
-}
+import Search from "./Search";
 function TrendsCard() {
   return (
     <div className="trends card">

@@ -166,9 +166,14 @@ body {
     height: auto;
 }
 
+.no-underline{  /* Pour les <Link > */
+    text-decoration: none;
+}
 .tweet-title-author {
     font-size: 1rem;
+    color: #ffffff;
 }
+ 
 
 .tweet-title-details {
     color: #6E767D;

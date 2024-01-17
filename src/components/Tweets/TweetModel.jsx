@@ -33,7 +33,7 @@ function TweetModel({ newProfile, tweet, userData, icon }) {
       <div className="tweet-content">
         <div className="tweet-body">
           <div className="tweet-title">
-            {userData.id === 'Herma_ID' ? (<Link to={`/profile`}><h3 className="tweet-title-author">{userData.author}</h3></Link>) : <Link to={`/${userData.author}`}><h3 className="tweet-title-author">{userData.author}</h3></Link>}
+            {userData.id === 'Herma_ID' ? (<Link to={`/profile`} className="no-underline"><h3 className="tweet-title-author">{userData.author}</h3></Link>) : <Link to={`/${userData.author}`}  className="no-underline"><h3 className="tweet-title-author">{userData.author}</h3></Link>}
             <span className="tweet-title-author">{icon}</span>
             <p className="tweet-title-details">{userData.userName} . {tweet.timePost}</p>
           </div>

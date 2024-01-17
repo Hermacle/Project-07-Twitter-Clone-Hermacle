@@ -28,7 +28,7 @@ function TweetModel({ newProfile, tweet, userData, icon }) {
   return (
     <div className="tweet">
       <div className="tweet-avatar">
-        {userData.id === 'Herma_ID' ? (<Link to={`/profile`}><img src={userData.avatar} alt="avatar" /></Link>) : <Link to={`/${userData.id}`}><img src={userData.avatar} alt="avatar" /></Link>}
+        {userData.id === 'Herma_ID' ? (<Link to={`/profile`}><img src={userData.avatar} alt="avatar" /></Link>) : <Link to={`/${userData.author}`}><img src={userData.avatar} alt="avatar" /></Link>}
       </div>
       <div className="tweet-content">
         <div className="tweet-body">

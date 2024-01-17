@@ -15,7 +15,7 @@ const msgIcon = <img src="src/Icons/Messages.svg" alt="Message Icon" />
 export default function SpecificProfile() {
 
   const { id } = useParams();
-  const clickedUser = Object.values(data).find(user => user.profile.id === id);
+  const clickedUser = Object.values(data).find(user => user.profile.author === id);
 
   if (!clickedUser) {
     return <p>Le PROFIL que vous avez demandé n'existe pas.</p>;

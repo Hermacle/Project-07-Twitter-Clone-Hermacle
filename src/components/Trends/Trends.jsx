@@ -1,59 +1,7 @@
 import { HiCheckBadge } from "react-icons/hi2";
 import Search from "./Search";
-function TrendsCard() {
-  return (
-    <div className="trends card">
-      <div className="tends-title display-flex">
-        <h4>Trends for you</h4>
-        <div><img src="src/Icons/Settings.svg" alt="Settings Icon" /></div>
-      </div> <br />
-      <div className="trend display-flex">
-        <div className="trend-detail">
-          <p className="small-text">Trending in Turkey</p>
-          <p>#SQUID</p>
-          <p className="small-text">2,066 Tweets</p>
-        </div>
-        <div>
-          <img src="src/Icons/More-2.svg" alt="More Icon" />
-        </div>
-      </div><br />
-      <div className="trend display-flex">
-        <div className="trend-detail">
-          <p className="small-text">Trending in Turkey</p>
-          <p>#SQUID</p>
-          <p className="small-text">2,066 Tweets</p>
-        </div>
-        <div>
-          <img src="src/Icons/More-2.svg" alt="More Icon" />
-        </div>
-      </div> <br />
-      <div className="trend display-flex">
-        <div className="trend-detail">
-          <p className="small-text">Trending in Turkey</p>
-          <p>#SQUID</p>
-          <p className="small-text">2,066 Tweets</p>
-        </div>
-        <div>
-          <img src="src/Icons/More-2.svg" alt="More Icon" />
-        </div>
-      </div> <br />
-      <div className="trend display-flex">
-        <div className="trend-detail">
-          <p className="small-text">Trending in Turkey</p>
-          <p>#SQUID</p>
-          <p className="small-text">2,066 Tweets</p>
-        </div>
-        <div>
-          <img src="src/Icons/More-2.svg" alt="More Icon" />
-        </div>
-      </div> <br />
+import TrendsCard from "./TrendsCard";
 
-      <div className="show-more">
-        <a href="#">Show more</a>
-      </div>
-    </div>
-  )
-}
 function Follow() {
   return (
     <div className="follow card">

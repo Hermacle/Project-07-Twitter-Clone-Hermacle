@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+ 
 import smileIcon from './../../Icons/Emoji.svg';
 import gifIcon from './../../Icons/Gif.svg';
 import mediaIcon from './../../Icons/Media.svg';
@@ -24,6 +26,7 @@ function TweetEditorButtons({ handleTweetButtonClick }) {
         <img src={smileIcon} alt="Smile Icon" />
         <img src={scheduleIcon} alt="Schedule Icon" />
       </div>
+      <Link></Link>
       <button className="button" onClick={handleTweetButtonClick}>
         {buttonValue}
       </button>
@@ -33,22 +36,26 @@ function TweetEditorButtons({ handleTweetButtonClick }) {
 
 export default function TweetEditorForm() {
   const [newTweetText, setNewTweetText] = useState('');
-
-  function handleTweetButtonClick(){
-    const newTweet = {
-      id: "Tweet2_ID",
-      text: newTweetText,
-      imagePost: "",
-      timePost: "now",  
-      commentCount: 0,
-      likeCount: 0,
-      repostCount: 0,
-      shareCount: 0
+ 
+    function handleTweetButtonClick(){
+      const newTweet = {
+        id: "Tweet2_ID",
+        text: newTweetText,
+        imagePost: "",
+        timePost: "now",  
+        commentCount: 0,
+        likeCount: 0,
+        repostCount: 0,
+        shareCount: 0
+      };
+      
+      //Ajout du tweet seulement si le champs n'est pas vide
+      if(newTweetText !== ''){
+        data.Hermacle.tweets.unshift(newTweet);
+        setNewTweetText('');  
+      }
     };
-    data.Hermacle.tweets.unshift(newTweet);
-    setNewTweetText('');  
-  };
-
+  
   return (
     <div className="tweet-editor-form">
       <TweetEditorInput newTweetText={newTweetText} setNewTweetText={setNewTweetText} />

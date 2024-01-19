@@ -1,7 +1,4 @@
 import("./Profile.css")
-import data from "../Data/data";
-
-import { useParams } from "react-router-dom";
 
 import TitleProfile from "./TitleProfile";
 import ImageUser from "./ImageUser";
@@ -12,24 +9,9 @@ import AboutUser from "./AboutUser";
 const moreIcon = <img src="src/Icons/More-2.svg" alt="More Icon" />
 const msgIcon = <img src="src/Icons/Messages.svg" alt="Message Icon" />
 
-export default function SpecificProfile() {
+export default function SpecificProfile({author,posts,userName,avatar,imageCover,description,tags,followers,followings}) {
 
-  const { id } = useParams();
-  const clickedUser = Object.values(data).find(user => user.profile.author === id);
-
-  if (!clickedUser) {
-    return <p>Le PROFIL que vous avez demandé n'existe pas.</p>;
-  }
   
-  const author = clickedUser.profile.author;
-  const posts = clickedUser.tweets.length;
-  const userName = clickedUser.profile.userName;
-  const avatar = clickedUser.profile.avatar;
-  const imageCover = clickedUser.profile.imageCover;
-  const description = clickedUser.profile.description;
-  const tags = clickedUser.profile.tags;
-  const followers = clickedUser.profile.followers;
-  const followings = clickedUser.profile.followings;
 
   return (
     <div>

@@ -5,8 +5,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 
 // tweet and profile components
 import CurrentProfile from '../components/Profile/CurrentProfile';
-import AllTweets from '../components/Tweets/AllTweets';
-import SpecificTweets from '../components/Tweets/SpecificTweets';
+import CurrentTweets from '../components/Tweets/CurrentTweets';
 
 //the components of the right sidebar
 import Search from '../components/Trends/Search';
@@ -24,7 +23,7 @@ export default function ProfilePage() {
       <main className="timeline">
         <section >
           <CurrentProfile />
-          <SpecificTweets icon={<HiCheckBadge />} />
+          <CurrentTweets icon={<HiCheckBadge />} />
         </section>
       </main>
       <div className="right-sidebar">

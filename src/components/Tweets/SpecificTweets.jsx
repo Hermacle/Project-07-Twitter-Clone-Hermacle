@@ -2,19 +2,20 @@
 import React from 'react';
 import "./Tweets.css";
 
-import data from '../Data/data';
+ 
 import TweetModel from './TweetModel';
 
-function SpecificTweets({ icon }) {
-  const twitterUserData = data.Twitter;
-  const twitterTweets = twitterUserData.tweets;
-
+function SpecificTweets({ tweets,userData, icon }) {
+   
   return (
     <div>
-      {twitterTweets.map((tweet) => (
-        <TweetModel key={tweet.id} tweet={tweet} userData={twitterUserData.profile} icon={icon} />
+      {tweets.map((tweet) => (
+        <TweetModel key={tweet.id} tweet={tweet} icon={icon} userData={userData} />
       ))}
     </div>
   );
 }
 export default SpecificTweets;
+ 
+
+  

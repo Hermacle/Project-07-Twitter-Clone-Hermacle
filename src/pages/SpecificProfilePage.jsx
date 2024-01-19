@@ -45,7 +45,8 @@ export default function SpecificProfilePage({ newProfile }) {
             followers={clickedUser.profile.followers}
             followings={clickedUser.profile.followings}
           />
-          <SpecificTweets icon={<HiCheckBadge />} />
+         <SpecificTweets tweets={clickedUser.tweets} userData={clickedUser.profile} icon={<HiCheckBadge />} />
+
         </section>
       </main>
       <div className="right-sidebar">

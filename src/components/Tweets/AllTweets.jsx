@@ -3,7 +3,7 @@ import "./Tweets.css";
 import data from '../Data/data';
 import TweetModel from './TweetModel';
  
-function AllTweets({ newProfile, icon }) {
+function AllTweets({ icon }) {
   // Parcourir l'objet de données pour obtenir les tweets de tous les utilisateurs
   const allTweets = Object.keys(data).map((user) => {
 

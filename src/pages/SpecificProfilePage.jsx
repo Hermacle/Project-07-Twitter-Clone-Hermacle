@@ -19,7 +19,7 @@ import PolicyTerms from '../components/Trends/PolicyTerms';
 // React Icons 
 import { HiCheckBadge } from 'react-icons/hi2';
 
-export default function SpecificProfilePage({ newProfile }) {
+export default function SpecificProfilePage() {
 
 
   const { id } = useParams();

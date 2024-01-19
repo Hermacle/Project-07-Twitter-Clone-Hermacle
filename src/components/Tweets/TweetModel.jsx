@@ -12,7 +12,7 @@ import { BiRepost } from "react-icons/bi";
 import { FiShare } from "react-icons/fi";
 
 
-function TweetModel({ newProfile, tweet, userData, icon }) {
+function TweetModel({ tweet, userData, icon }) {
   const [count, setCount] = useState(tweet.likeCount);
   const [increment, setIncrement] = useState(true);
 

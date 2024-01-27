@@ -8,6 +8,7 @@ import Header from '../components/Header/Header';
 import Avatar from '../components/Tweet-editor/Avatar';
 import TweetEditorForm from '../components/Tweet-editor/TweetEditorForm';
 import AllTweets from '../components/Tweets/AllTweets';
+import data from '../components/Data/data';
 
 //the components of the right sidebar
 import Search from '../components/Trends/Search';
@@ -17,8 +18,16 @@ import PolicyTerms from '../components/Trends/PolicyTerms';
 
 // React Icons 
 import { HiCheckBadge } from 'react-icons/hi2';
+import { useState } from 'react';
 
 export default function Home() {
+  // état local pour les tweets de l'utilisateur connecté
+  const [tweets, setTweets] = useState(data.Hermacle.tweets);
+
+  // Fonction de mise à jour des tweets
+  const updateTweets = (newTweet) => {
+    setTweets([newTweet, ...tweets]);
+  };
   return (
     <>
       <Sidebar homeIcon="src/Icons/Home-Fill.svg" profileIcon="src/Icons/Profile.svg" />
@@ -26,10 +35,10 @@ export default function Home() {
         <Header />
         <section className='tweet-editor'>
           <Avatar />
-          <TweetEditorForm />
+          <TweetEditorForm updateTweets={updateTweets} />
         </section>
         <section className='tweets'>
-          <AllTweets icon={<HiCheckBadge />} />
+          <AllTweets tweets={tweets} icon={<HiCheckBadge />} />
         </section>
       </main>
       <div className="right-sidebar">

@@ -15,7 +15,7 @@ const data = {
     tweets: [
       {
         id: "Tweet1_ID",
-        text: "President Joe Biden touted a new agreement reached with the Europen Union to ease trump-era tariffs on aluminum and stell as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+        text: "🚀 Let's blast off on my 100-day Coding Challenge! 💻🚩 Excited to share my coding journey with you all. It's a big goal for the new year, and I'm determined to push my limits!",
         imagePost :"",
         timePost: "7m",
         commentCount: 57,

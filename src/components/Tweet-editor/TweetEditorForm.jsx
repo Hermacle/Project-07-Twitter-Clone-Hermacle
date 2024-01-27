@@ -34,26 +34,27 @@ function TweetEditorButtons({ handleTweetButtonClick }) {
   );
 }
 
-export default function TweetEditorForm() {
+export default function TweetEditorForm({ updateTweets }) {
   const [newTweetText, setNewTweetText] = useState('');
- 
-    function handleTweetButtonClick(){
-      const newTweet = {
-        id: "Tweet2_ID",
-        text: newTweetText,
-        imagePost: "",
-        timePost: "now",  
-        commentCount: 0,
-        likeCount: 0,
-        repostCount: 0,
-        shareCount: 0
-      };
-      
-      //Ajout du tweet seulement si le champs n'est pas vide
-      if(newTweetText !== ''){
-        data.Hermacle.tweets.unshift(newTweet);
-        setNewTweetText('');  
-      }
+
+  const handleTweetButtonClick = () => {
+    const newTweet = {
+      id: "Tweet2_ID",
+      text: newTweetText,
+      imagePost: "",
+      timePost: "now",
+      commentCount: 0,
+      likeCount: 0,
+      repostCount: 0,
+      shareCount: 0
+    };
+
+    if (newTweetText.trim() !== '') {
+      data.Hermacle.tweets.unshift(newTweet);
+      updateTweets(newTweet);
+      setNewTweetText('');
+    }
+
     };
   
   return (
@@ -62,4 +63,4 @@ export default function TweetEditorForm() {
       <TweetEditorButtons handleTweetButtonClick={handleTweetButtonClick} />
     </div>
   );
-}
+} 
